@@ -133,7 +133,7 @@ let getDateAgo = (d, days) => {
     const date = new Date(d);
     date.setDate(date.getDate() - days);
 
-    return date.toLocaleString().replace(/(\d.*), \s+(\d.*)/gu, '$1');
+    return date.toLocaleString().replace(/(\d.*),\s+(\d.*)/gu, '$1');
 };
 
 console.log(getDateAgo('2019-01-29', 1)); // 28.01.2019
